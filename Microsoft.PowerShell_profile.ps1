@@ -283,3 +283,7 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
         Write-Error "Failed to install zoxide. Error: $_"
     }
 }
+
+function run-winutil {
+    Invoke-RestMethod https://christitus.com/win | Invoke-Expression
+}
