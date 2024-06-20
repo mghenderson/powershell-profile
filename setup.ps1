@@ -70,7 +70,7 @@ try {
     [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing")
     $fontFamilies = (New-Object System.Drawing.Text.InstalledFontCollection).Families.Name
 
-    if ($fontFamilies -notcontains "CaskaydiaCove NF") {
+    if ($fontFamilies -notcontains "JetBrainsMono NFM") {
         $webClient = New-Object System.Net.WebClient
         $webClient.DownloadFileAsync((New-Object System.Uri("https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip")), ".\JetBrainsMono.zip")
         
