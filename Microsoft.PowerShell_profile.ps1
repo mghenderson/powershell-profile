@@ -309,7 +309,6 @@ function Get-Theme {
 
 ## Final Line to set prompt
 Get-Theme
-Get-Theme
 if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     Invoke-Expression (& { (zoxide init --cmd cd powershell | Out-String) })
 } else {
@@ -323,7 +322,7 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     }
 }
 
-function run-winutil {
+function Run-Winutil {
     Invoke-RestMethod https://christitus.com/win | Invoke-Expression
 }
 
