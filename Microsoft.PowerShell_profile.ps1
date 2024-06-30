@@ -322,7 +322,7 @@ if (Get-Command zoxide -ErrorAction SilentlyContinue) {
     }
 }
 
-function Run-Winutil {
+function Invoke-Winutil {
     Invoke-RestMethod https://christitus.com/win | Invoke-Expression
 }
 
